@@ -1,76 +1,119 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f3f7;
   color: #222;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  align-items: flex-start;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.profile {
-  flex: 1;
-  min-width: 280px;
-  max-width: 400px;
+.header {
   text-align: center;
+  padding: 40px 20px;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: 4px solid #eee;
-  margin-bottom: 20px;
+  border: 4px solid #ddd;
+  object-fit: cover;
 }
 
-.profile h1 {
-  font-size: 28px;
-  margin: 0;
+.header h1 {
+  font-size: 32px;
+  margin: 15px 0 5px;
 }
 
-.profile h1 span {
-  font-weight: 700;
+.header span {
+  color: #0077b5;
 }
 
-.profile p {
+.header h2 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #555;
+}
+
+.header p {
+  max-width: 600px;
+  margin: 15px auto;
   font-size: 16px;
-  margin-top: 10px;
   line-height: 1.6;
 }
 
-.socials {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 20px;
-  flex: 1;
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.card {
-  padding: 20px;
-  border-radius: 12px;
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.skills li {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.projects .project-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact {
   text-align: center;
-  font-weight: bold;
-  text-decoration: none;
+  margin-top: 60px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #0077b5;
   color: white;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  padding: 12px 24px;
+  border-radius: 30px;
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+.contact-btn:hover {
+  background-color: #005c94;
 }
 
-.linkedin { background-color: #0077b5; }
-.twitter { background-color: #1da1f2; }
-.github { background-color: #000; }
-.gmail { background-color: #dd4b39; }
+footer {
+  background-color: #1e1f26;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer .social-icons {
+  margin-bottom: 15px;
+}
+
+footer .social-icons a {
+  color: #ccc;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: white;
+}
