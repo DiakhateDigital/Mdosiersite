@@ -10,25 +10,33 @@
 <body>
 
   <header>
-    <div class="container">
-      <img src="WhatsApp Image 2025-04-01 at 14.01.53.jpeg" alt="El Hadji Mody Diakhate" class="profile-pic" />
-      <h1>El Hadji Mody Diakhate</h1>
-      <p class="subtitle">Étudiant passionné en Réseaux, Télécoms & Cybersécurité</p>
+    <div class="overlay">
+      <div class="header-content">
+        <h1>El Hadji Mody Diakhate</h1>
+        <p class="subtitle">Étudiant passionné en Réseaux, Télécoms & Cybersécurité</p>
+      </div>
+      <nav class="navbar">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#education">Formation</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <nav class="navbar">
-    <a href="#about">À propos</a>
-    <a href="#skills">Compétences</a>
-    <a href="#education">Formation</a>
-    <a href="#projects">Projets</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Photo de profil déplacée ici -->
+  <div class="profile-container">
+    <img src="WhatsApp Image 2025-04-01 at 14.01.53.jpeg" alt="Photo de profil" class="profile-pic">
+  </div>
 
   <section id="about" class="section">
     <h2>À propos</h2>
     <p>
       Étudiant en 3e année de licence à l’UADB, passionné par la cybersécurité, les réseaux et la virtualisation. Je me forme en continu pour devenir un expert du domaine IT, capable d’anticiper et de répondre aux menaces modernes.
+Je suis une personne dynamique, curieuse et ouverte d’esprit, cherchant à mettre mes compétences en réseau et cybersécurité au service d’une entreprise innovante.
+      J’apprécie le travail en équipe et l’apprentissage continu afin de relever de nouveaux défis.
     </p>
   </section>
 
@@ -52,7 +60,28 @@
     </ul>
   </section>
 
-  <section id="projects" class="section alt">
+  <section id="experience" class="section alt">
+    <h2>Expérience Professionnelle</h2>
+    <ul>
+      <li>
+        <strong>Licence 2 | Projet Universitaire</strong><br>
+        Virtualisation de Windows Server sous VMware<br>
+        DNS, DHCP, GPO, gestion des permissions et stratégies de groupe
+      </li>
+      <li>
+        <strong>Licence 3 | Projet Pratique</strong><br>
+        Sécurisation d’un Réseau d’Entreprise avec pfSense<br>
+        Pare-feu VMware, politiques de sécurité, firewall physique
+      </li>
+      <li>
+        <strong>Licence 3 | Projet Pratique</strong><br>
+        Configuration et Administration de Réseaux d’Entreprise<br>
+        VLAN, DHCP, sécurité et routage
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
     <h2>Projets</h2>
     <div class="project-list">
       <div class="project-item">
@@ -66,7 +95,7 @@
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section alt">
     <h2>Contact</h2>
     <p>📞 76 446 95 63 | 📧 <a href="mailto:elhadjidiakhate@gmail.com">elhadjidiakhate@gmail.com</a></p>
     <div class="socials">
