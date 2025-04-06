@@ -1,4 +1,3 @@
-/* Styles généraux */
 body {
   font-family: 'Poppins', sans-serif;
   background: #f0f4f8;
@@ -6,8 +5,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* Header avec image de fond */
 header {
   background: url('digitale-vectoriel.jpg') no-repeat center center/cover;
   color: #fff;
@@ -15,8 +12,6 @@ header {
   padding: 100px 20px;
   position: relative;
 }
-
-/* Overlay pour le header */
 header::before {
   content: '';
   position: absolute;
@@ -27,28 +22,22 @@ header::before {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* Contenu du header */
 .header-content {
   position: relative;
   z-index: 1;
 }
-
 .header-content h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
-
 .subtitle {
   font-size: 1.2rem;
   color: #c2e9fb;
 }
-
-/* Photo de profil */
 .profile-container {
   text-align: center;
   margin-top: -60px; /* Ajustez cette valeur selon vos besoins */
 }
-
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -57,8 +46,6 @@ header::before {
   border: 4px solid #4fc3f7;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-
-/* Sections */
 .section {
   padding: 60px 20px;
   background: #ffffff;
@@ -67,19 +54,14 @@ header::before {
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
 .section.alt {
   background: #f0f4f8;
 }
-
-/* Titres de section */
 .section h2 {
   text-align: center;
   color: #1976d2;
   margin-bottom: 20px;
 }
-
-/* Grille de compétences */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -88,42 +70,33 @@ header::before {
   font-weight: bold;
   padding: 0 20px;
 }
-
-/* Liste de projets */
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 0 20px;
 }
-
 .project-item {
   background: #e3f2fd;
   padding: 20px;
   border-radius: 8px;
   border-left: 6px solid #1976d2;
 }
-
-/* Pied de page */
 footer {
   text-align: center;
   padding: 20px;
   background: #1976d2;
   color: #fff;
 }
-
-/* Liens des réseaux sociaux */
 .socials {
   text-align: center;
   margin-top: 10px;
 }
-
 .socials a {
   margin: 0 10px;
   font-size: 1.5rem;
   color: #1976d2;
 }
-
 .socials a:hover {
   color: #0d47a1;
 }
